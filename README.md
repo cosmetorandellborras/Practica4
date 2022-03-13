@@ -11,7 +11,7 @@ Además, hacer refactorizaciones al código inicial, subir las nuevas versiones 
 
 ## Diagrama de versiones
 
-![Diagrama de versiones](https://ibb.co/CHTjFz0)
+![Diagrama de versiones](https://i.ibb.co/sVMTr23/Captura-diagrama.png)
 
 ## Version 1.0.0
 
