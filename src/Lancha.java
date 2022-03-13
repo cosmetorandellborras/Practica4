@@ -1,13 +1,13 @@
 import nuevoPaquete.sonido;
 import java.sql.Date;
 /**
- * Clase Barco, conjunto de objetos que comparten los mismos atributos
+ * Clase Lancha, conjunto de objetos que comparten los mismos atributos
  * Visibilidad publica, podra ser vista desde la misma clase, sublase, paquete y para todos en general
  * Implementa la interfaz Sonido
- * Esta clase mantiene una relacion de composición con la clase Motor, Barco necesita de un motor para estar completo, sin el motor Barco por si solo no esta completo
+ * Esta clase mantiene una relacion de composición con la clase Motor, Lancha necesita de un motor para estar completo, sin el motor Lancha por si solo no esta completo
  * @author cosmetorandell / rafelllull
  */
-public class Barco implements sonido {
+public class Lancha implements sonido {
 	//Atributos
 	/**
 	 * Atributos
@@ -15,7 +15,7 @@ public class Barco implements sonido {
 	 * Nombre es de tipo String
 	 * fechaConstruccion es de tipo Date
 	 * numCamarotes es de tipo integer
-	 * motor es de tipo clase Motor, al tener una relación de composición con Motor, Motor sera un atributo de la clase Barco
+	 * motor es de tipo clase Motor, al tener una relación de composición con Motor, Motor sera un atributo de la clase Lancha
 	 */
 	  private String nombre;
 	  private Date fechaConstruccion;
@@ -83,13 +83,13 @@ public class Barco implements sonido {
 	 * Visibilidad publica, podra ser vista desde la misma clase, subclase, paquete y para todos en general
 	 * Al tener una relacion de composicion, los constructores al crear un nuevo objeto necesitan crear también un nuevo Motor
 	 */
-	public Barco() {
+	public Lancha() {
 		motor = new Motor();
 	}
 	/**
 	 * Constructor completo
 	 * Visibilidad pública, podra ser vista desde la misma clase, subclase, paquete y para todos en general
-	 * Este constructor completo, le pasaremos por parametro los atributos de Barco
+	 * Este constructor completo, le pasaremos por parametro los atributos de Lancha
 	 * Al tener una relacion de composicion, los constructores al crear un nuevo objeto necesitan crear también un nuevo Motor, y este llamara al constructor completo de Motor al cual se le pasaran los atributos del nuevo Motor
 	 * @param fabricante, el parámetro fabricante de tipo String nos definirá el nuevo fabricante del objeto
 	 * @param potencia, el parámetro potencia de topo String nos definirá la potencia del objeto
@@ -98,7 +98,7 @@ public class Barco implements sonido {
 	 * @param fechaConstruccion, el parámetro de tipo Date nos definirá la nueva fecha de construcción del objeto
 	 * @param numCamarotes, el parámetro de tipo integer nos definirá el nuevo numero de camarotes
 	 */
-	public Barco(String fabricante,String potencia, int codigo, String nombre, Date fechaConstruccion, int numCamarotes) {
+	public Lancha(String fabricante,String potencia, int codigo, String nombre, Date fechaConstruccion, int numCamarotes) {
 		this.motor = new Motor(fabricante, potencia, codigo);
 		this.nombre = nombre;
 		this.fechaConstruccion = fechaConstruccion;
@@ -106,7 +106,7 @@ public class Barco implements sonido {
 	}
 	/**
 	 * Método toString
-	 * Este metodo nos sobreescribira el metodo toString de la clase object, de tal manera que nos imprimira un String con los atributos del objeto de la clase Barco
+	 * Este metodo nos sobreescribira el metodo toString de la clase object, de tal manera que nos imprimira un String con los atributos del objeto de la clase Lancha
 	 */
 	@Override
 	public String toString() {
@@ -114,11 +114,11 @@ public class Barco implements sonido {
 	}
 	/**
 	 * Método sonido
-	 * Barco al implementar sonido, este método sobreescribe el método sonido y lo implementa imprimiendo un String con el sonido particular de este objeto
+	 * Lancha al implementar sonido, este método sobreescribe el método sonido y lo implementa imprimiendo un String con el sonido particular de este objeto
 	 */
 	@Override
 	public void sonido() {
-		System.out.print("El barco hace brrrr");
+		System.out.print("La lancha hace brrrr");
 		
 	}
 	
