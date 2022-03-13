@@ -17,7 +17,7 @@ Subimos la versión inicial del proyecto tal como estaba en la práctica 3.
 
 ## Versión 2.0.0
 
-Eliminamos interfaz sonido asi como los overrides e implements sonido.
+Eliminamos interfaz sonido así como los overrides e implements sonido.
 
 ## Versión 2.1.0
 
@@ -37,7 +37,7 @@ Creamos un nuevo paquete y movemos la interfaz sonido al nuevo paquete mediante 
 
 ## Versión 4.0.0
 
-Juntamos la rama master con la rama paquete, obtenemos la version 4 del proyecto con el nuevo paquete y la interfaz sonido en el nuevo paquete.
+Juntamos la rama master con la rama paquete, obtenemos la versión 4 del proyecto con el nuevo paquete y la interfaz sonido en el nuevo paquete.
 
 ## Versión 4.1.0
 
@@ -45,11 +45,11 @@ Añadimos la clase Pájaro.
 
 ## Versión 4.2.0
 
-Añadimos el atributo color a la clase Pajaro, así como todos sus getters – setters, ampliado constructor completo con el nuevo atributo y toString
+Añadimos el atributo color a la clase Pájaro, así como todos sus getters – setters, ampliado constructor completo con el nuevo atributo y toString
 
 ## Versión 5.0.0
 
-Juntamos la rama master con la rama paquete, obtenemos la version 5 del proyecto con la nueva clase Pajaro.
+Juntamos la rama master con la rama paquete, obtenemos la version 5 del proyecto con la nueva clase Pájaro.
 
 ## Versión 5.1.0
 
@@ -61,4 +61,4 @@ Añadimos el atributo eslora a la clase Lancha, así como todos sus getters – 
 
 ## Versión 6.0.0
 
-Juntamos la rama master con la rama clasebarco, obtenemos la version 6 del proyecto.
+Juntamos la rama master con la rama clasebarco, obtenemos la versión 6 del proyecto.
