@@ -12,8 +12,10 @@ public class Pajaro extends Mascota implements sonido {
 	 * Atributos
 	 * Visibilidad privada, solo puede ser vista desde la misma clase
 	 * Raza es de tipo String
+	 * Color es de tipo String
 	 */
 	private String raza;
+	private String color;
 	//Getters i setters
 	/**
 	 * Método getRaza
@@ -34,6 +36,24 @@ public class Pajaro extends Mascota implements sonido {
 		this.raza = raza;
 	}
 	/**
+	 * Metodo getColor
+	 * Este método permitirá obtener el valor del atributo color del objeto
+	 * Visibilidad pública, podra ser vista desde la misma clase, subclase, paquete y para todos en general
+	 * @return color, nos retorna un String con la raza del objeto.
+	 */
+	private String getColor() {
+		return color;
+	}
+	/**
+	 * Metodo setColor
+	 * Este método nos permitirá modificar el atributo raza del objeto
+	 * Visibilidad pública, podra ser vista desde la misma clase, subclase, paquete y para todos en general
+	 * @param color, se le pasa por parámetro un String que nos definirá el color del objeto
+	 */
+	private void setColor(String color) {
+		this.color = color;
+	}
+	/**
 	 * Constructor vacío
 	 * Visibilidad publica, podra ser vista desde la misma clase, subclase, paquete y para todos en general
 	 */
@@ -47,17 +67,19 @@ public class Pajaro extends Mascota implements sonido {
 	 * @param nombre, el parámetro nombre de tipo String nos definirá el nuevo nombre del objeto
 	 * @param edad, el parámetro edad de tipo integer nos definirá la nueva edad del objeto
 	 * @param raza, el parámetro raza de tipo String nos definirá la nueva raza del objeto
+	 * @param color, el parámetro color de tipo String nos definirá el nuevo color del objeto
 	 */
-	public Pajaro(String nombre, int edad, String raza) {
+	public Pajaro(String nombre, int edad, String raza, String color) {
 		super(nombre,edad); //Necesitamos llamar al constructor de la clase Masota con "super()" para introducir los atributos de la clase Mascota, posteriormente se agragaran los de Pajaro
 		this.raza = raza;
+		this.color = color;
 	}
 	/**
 	 * Método toString
 	 * Este metodo nos sobreescribira el metodo toString de la clase object, de tal manera que nos imprimira un String con los atributos del objeto de la clase Pajaro
 	 */
 	public String toString() {
-		return "Pajaro [Nombre=" + this.getNombre() + ", edad=" + this.getEdad() + ", raza= " + raza + "]";
+		return "Pajaro [Nombre=" + this.getNombre() + ", edad=" + this.getEdad() + ", raza= " + raza + ", color= "+ color + "]";
 	}
 	/**
 	 * Método sonido
