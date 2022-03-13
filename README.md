@@ -1,13 +1,11 @@
 # Practica4
 
----
 
 ## Objetivos
 
 Los objetivos de esta práctica son aprender a utilizar la consola de git, así como también las la página web de github
 Además, hacer refactorizaciones al código inicial, subir las nuevas versiones a github usando el correcto versionado semántico y realizar un archivo readme con markdown
 
----
 
 ## Diagrama de versiones
 
