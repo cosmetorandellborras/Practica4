@@ -1,3 +1,4 @@
+import nuevoPaquete.sonido;
 /**
  * Clase Perro, conjunto de objetos que comparten los mismos atributos
  * Visibilidad publica, podra ser vista desde la misma clase, sublase, paquete y para todos en general

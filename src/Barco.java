@@ -1,3 +1,4 @@
+import nuevoPaquete.sonido;
 import java.sql.Date;
 /**
  * Clase Barco, conjunto de objetos que comparten los mismos atributos
