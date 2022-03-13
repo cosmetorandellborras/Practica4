@@ -6,7 +6,7 @@
  * Implemenenta la interfaz sonido
  * @author cosmetorandell / rafelllull
  */
-public abstract class Mascota {
+public abstract class Mascota implements sonido{
 	/**
 	 * Atributos
 	 * Visibilidad privada, solo puede ser vista desde la misma clase
