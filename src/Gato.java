@@ -61,7 +61,7 @@ public class Gato extends Mascota {
 	 * Método sonido
 	 * Gato al implementar sonido por herencia, este método sobreescribe el método sonido y lo implementa imprimiendo un String con el sonido particular de este objeto
 	 */
-	@Override
+	
 	public void sonido() {
 		System.out.print("El gato hace miau");
 	}

@@ -5,7 +5,7 @@
  * Implementa la interfaz Sonido por herencia
  * @author cosmetorandell / rafelllull
  */
-public class Perro extends Mascota implements Sonido {
+public class Perro extends Mascota {
 	/**
 	 * Atributos
 	 * Visibilidad privada, solo puede ser vista desde la misma clase
@@ -63,7 +63,7 @@ public class Perro extends Mascota implements Sonido {
 	 * Perro al implementar sonido por herencia, este método sobreescribe el método sonido y lo implementa imprimiendo un String con el sonido particular de este objeto
 	 */
 	
-	@Override
+	
 	public void sonido() {
 		System.out.print("El perro hace guau");
 	}

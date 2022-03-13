@@ -6,7 +6,7 @@ import java.sql.Date;
  * Esta clase mantiene una relacion de composición con la clase Motor, Barco necesita de un motor para estar completo, sin el motor Barco por si solo no esta completo
  * @author cosmetorandell / rafelllull
  */
-public class Barco implements Sonido {
+public class Barco {
 	//Atributos
 	/**
 	 * Atributos
@@ -115,7 +115,7 @@ public class Barco implements Sonido {
 	 * Método sonido
 	 * Barco al implementar sonido, este método sobreescribe el método sonido y lo implementa imprimiendo un String con el sonido particular de este objeto
 	 */
-	@Override
+	
 	public void sonido() {
 		System.out.print("El barco hace brrrr");
 		
