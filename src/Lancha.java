@@ -15,11 +15,13 @@ public class Lancha implements sonido {
 	 * Nombre es de tipo String
 	 * fechaConstruccion es de tipo Date
 	 * numCamarotes es de tipo integer
+	 * eslora es de tipo float
 	 * motor es de tipo clase Motor, al tener una relación de composición con Motor, Motor sera un atributo de la clase Lancha
 	 */
 	  private String nombre;
 	  private Date fechaConstruccion;
 	  private int numCamarotes;
+	  private float eslora;
 	  private Motor motor;
 	//Getters i setters
 	/**
@@ -77,6 +79,24 @@ public class Lancha implements sonido {
 	public void setNumCamarotes(int numCamarotes) {
 		this.numCamarotes = numCamarotes;
 	}
+	/**
+	 * Método getEslora
+	 * Este método nos permitirá obtener el valor del atributo eslora del objeto
+	 * Visibilidad pública, podra ser vista desde la misma clase, subclase, paquete y para todos en general
+	 * @return eslora, nos retorna un integer con la eslora del objeto
+	 */
+	public float getEslora() {
+		return eslora;
+	}
+	/**
+	 * Método setEslora
+	 * Este método nos permitirá modificar el valor del atributo eslora del objeto
+	 * Visibilidad pública, podra ser vista desde la misma clase, subclase, paquete y para todos en general
+	 * @param eslora, se le pasa por parámetro un float que nos definirá la eslora del objeto
+	 */
+	public void setEslora(float eslora) {
+		this.eslora = eslora;
+	}
 	//Contructores
 	/**
 	 * Constructor vacío
@@ -97,12 +117,14 @@ public class Lancha implements sonido {
 	 * @param nombre, el parámetro nombre de tipo String nos definirá el nuevo nombre del objeto
 	 * @param fechaConstruccion, el parámetro de tipo Date nos definirá la nueva fecha de construcción del objeto
 	 * @param numCamarotes, el parámetro de tipo integer nos definirá el nuevo numero de camarotes
+	 * @param eslora, el parámetro de tipo float nos definirá la nueva eslora del objeto
 	 */
-	public Lancha(String fabricante,String potencia, int codigo, String nombre, Date fechaConstruccion, int numCamarotes) {
+	public Lancha(String fabricante,String potencia, int codigo, String nombre, Date fechaConstruccion, int numCamarotes, float eslora) {
 		this.motor = new Motor(fabricante, potencia, codigo);
 		this.nombre = nombre;
 		this.fechaConstruccion = fechaConstruccion;
 		this.numCamarotes = numCamarotes;
+		this.eslora = eslora;
 	}
 	/**
 	 * Método toString
@@ -110,7 +132,7 @@ public class Lancha implements sonido {
 	 */
 	@Override
 	public String toString() {
-		return "Barco [nombre=" + nombre + ", fechaConstruccion=" + fechaConstruccion + ", numCamarotes=" + numCamarotes + "]";
+		return "Barco [nombre=" + nombre + ", fechaConstruccion=" + fechaConstruccion + ", numCamarotes=" + numCamarotes + ", eslora=" + eslora + "]";
 	}
 	/**
 	 * Método sonido
