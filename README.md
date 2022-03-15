@@ -49,7 +49,7 @@ Añadimos el atributo color a la clase Pájaro, así como todos sus getters – 
 
 ## Versión 5.0.0
 
-Juntamos la rama master con la rama paquete, obtenemos la version 5 del proyecto con la nueva clase Pájaro.
+Juntamos la rama master con la rama clase, obtenemos la version 5 del proyecto con la nueva clase Pájaro.
 
 ## Versión 5.1.0
 
